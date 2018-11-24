@@ -1,60 +1,20 @@
 #include <iostream>
 #include <string>
+#include "Employee.h"
+#include "ProductionWorker.h"
 using namespace std;
 
-class Employee
-{
-private:
-   string name;
-   int number;
-   string date;
-public:
-   Employee();
-   Employee(string, int, string);
 
-   string getName();
-   
-}
-;
-class ProductionWorker
-{
-private:
-   int shift;
-   double hourlypayrate;
-public:
-   ProductionWorker();
-   int setshift();
-   double sethourlypayrate();
-
-};
-
-class ShiftSurpervisor: public Employee
-{
-private:
-   double annualsalary;
-   double annualproductionbonus;
-public:
-
-};
-
-class TeamLeader
-{
-private:
-   int monthlyBonus;
-   int requiredHours;
-   int trainingHours;
-public:
-   TeamLeader();
-   int getmonthlyBonus();
-   int getrequiredHours();
-   int gettrainingHours();
-   int setmonthlyBonus();
-   int setrequiredHours();
-   int settrainingHours();
-
-};
-
+/*
+This program will create an employee*/
 int main()
 {
+   ProductionWorker Matthew(4, 12.00, "Matthew", 123456, "09/15/1998");
+   cout << Matthew.getName() << endl;
+   cout << Matthew.getDate() << endl;
+   cout << Matthew.getNumber() << endl;
+   cout << Matthew.getshift() << endl;
+   cout << Matthew.gethourlypayrate() << endl;
+   system("pause");
    return 0;
 }
