@@ -7,32 +7,23 @@ ProductionWorker::ProductionWorker()
    name = "";
    number = 0;
    date = "";
+   hoursworkedthismonth = 0;
 }
 
-ProductionWorker::ProductionWorker(int s, double p, std::string n, int num, std::string date1)
+ProductionWorker::ProductionWorker(int s, double p, std::string n, int num, std::string date1, int hw)
 {
    shift = s;
-   if (shift != 1 && shift != 2)
-   {
-      std::cout << "Incorrect shift. Please enter a correct one to proceed with the program" << std::endl;
-      system("pause");
-      exit(EXIT_FAILURE); 
-   }
    hourlypayrate = p;
    name = n;
    number = num;
    date = date1;
+   hoursworkedthismonth = hw;
 }
 void ProductionWorker::setshift(int s)
 {
    shift = s;
-   if (shift != 1 || shift != 2)
-   {
-      std::cout << "Incorrect shift. Please enter a correct one to proceed with the program" << std::endl;
-      system("pause");
-      exit(EXIT_FAILURE);
-   }
 }
+
 void ProductionWorker::sethourlypayrate(double h)
 {
    hourlypayrate = h;
@@ -46,4 +37,14 @@ int ProductionWorker::getshift()
 double ProductionWorker::gethourlypayrate()
 {
    return hourlypayrate;
+}
+
+double ProductionWorker::moneyearned()
+{
+   return hourlypayrate * hoursworkedthismonth;
+}
+
+void ProductionWorker::yellout()
+{
+   std::cout << "I'm working here. I'm working here." << std::endl;
 }

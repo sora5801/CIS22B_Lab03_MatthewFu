@@ -35,3 +35,8 @@ void ShiftSupervisor::setannualproductionbonus(double ap)
 {
    annualproductionbonus = ap;
 }
+
+double ShiftSupervisor::moneyearned()
+{
+   return annualsalary + annualproductionbonus;
+}
