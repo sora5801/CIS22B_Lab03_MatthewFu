@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include "Employee.h"
 
-//The class ProductionWorker is 
+//The class ProductionWorker is a derived class of Employee. This demonstrates Inheritance
 class ProductionWorker : public Employee
 {
    //These variables are declared protected so that the classes derived from this one
