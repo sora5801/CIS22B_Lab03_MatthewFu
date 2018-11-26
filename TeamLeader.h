@@ -16,9 +16,10 @@ public:
    TeamLeader(int, int, int, double, int, std::string, int, std::string);
 
    //Accessors
-   int getmonthlyBonus();
-   int getrequiredHours();
-   int gettrainingHours();
+   int getmonthlyBonus() const;
+   int getrequiredHours() const;
+   int gettrainingHours() const;
+
    //Mutators
    void setmonthlyBonus(int);
    void setrequiredHours(int);

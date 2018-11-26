@@ -15,9 +15,9 @@ public:
    //Constructor
    Employee(std::string, int, std::string);
    //Accessors
-   std::string getName();
-   int getNumber();
-   std::string getDate();
+   std::string getName() const;
+   int getNumber() const;
+   std::string getDate() const;
    //Mutators
    void setName(std::string);
    void setNumber(int);

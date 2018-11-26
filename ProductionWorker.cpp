@@ -29,14 +29,24 @@ void ProductionWorker::sethourlypayrate(double h)
    hourlypayrate = h;
 }
 
-int ProductionWorker::getshift()
+void ProductionWorker::sethoursworkedthismonth(int hs)
+{
+   hoursworkedthismonth = hs;
+}
+
+int ProductionWorker::getshift() const
 {
    return shift;
 }
 
-double ProductionWorker::gethourlypayrate()
+double ProductionWorker::gethourlypayrate() const
 {
    return hourlypayrate;
+}
+
+int ProductionWorker::gethoursworkedthismonth() const
+{
+   return hoursworkedthismonth;
 }
 
 double ProductionWorker::moneyearned()

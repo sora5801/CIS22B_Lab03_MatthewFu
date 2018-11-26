@@ -1,16 +1,16 @@
 #include "Employee.h"
 
-std::string Employee::getName()
+std::string Employee::getName() const
 {
    return name;
 }
 
-int Employee::getNumber()
+int Employee::getNumber() const
 {
    return number;
 }
 
-std::string Employee::getDate()
+std::string Employee::getDate() const
 {
    return date;
 }

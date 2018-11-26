@@ -17,12 +17,12 @@ ShiftSupervisor::ShiftSupervisor(double as, double ap, std::string n, int num, s
    date = d;
 }
 
-double ShiftSupervisor::getannualsalary()
+double ShiftSupervisor::getannualsalary() const
 {
    return annualsalary;
 }
 
-double ShiftSupervisor::getannualproductionbonus()
+double ShiftSupervisor::getannualproductionbonus() const
 {
    return annualproductionbonus;
 }
@@ -36,7 +36,3 @@ void ShiftSupervisor::setannualproductionbonus(double ap)
    annualproductionbonus = ap;
 }
 
-double ShiftSupervisor::moneyearned()
-{
-   return annualsalary + annualproductionbonus;
-}

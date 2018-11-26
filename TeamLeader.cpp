@@ -22,15 +22,15 @@ TeamLeader::TeamLeader(int mn, int rh, int th, double hr, int hm, std::string n,
    number = num;
    date = d;
 }
-int TeamLeader::getmonthlyBonus()
+int TeamLeader::getmonthlyBonus() const
 {
    return monthlyBonus;
 }
-int TeamLeader::getrequiredHours()
+int TeamLeader::getrequiredHours() const
 {
    return requiredHours;
 }
-int TeamLeader::gettrainingHours()
+int TeamLeader::gettrainingHours() const
 {
    return trainingHours;
 }

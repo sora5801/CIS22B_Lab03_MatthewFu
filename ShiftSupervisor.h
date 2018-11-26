@@ -12,10 +12,12 @@ public:
    ShiftSupervisor();
    //Constructor
    ShiftSupervisor(double, double, std::string, int, std::string);
-   double getannualsalary();
-   double getannualproductionbonus();
+   //Accessors
+   double getannualsalary() const;
+   double getannualproductionbonus() const;
+   //Mutators
    void setannualsalary(double);
    void setannualproductionbonus(double);
-   double moneyearned();
+
 
 };
