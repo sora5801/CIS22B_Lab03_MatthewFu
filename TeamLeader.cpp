@@ -56,5 +56,5 @@ double TeamLeader::moneyearned()
 
 void TeamLeader::yellout()
 {
-   std::cout << "Get back to work, lazy bums!" << std::endl;
+   std::cout << "Get back to work, lazy bum!" << std::endl;
 }

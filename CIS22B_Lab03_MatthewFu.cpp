@@ -24,7 +24,10 @@ Creates another ProductionWorker object, but calls the second constructor.
 Creates ShiftSupervisor object.
 Creates TeamLeader object.
 Introduce user to factory and let's him or her know his or her shift, hourly pay, and monthly rate.
-
+Introduce user to the Shift Supervisor and let's user know annual salary as well as bonus.
+Call vocal command functions that has a Teamleader object as a parameter
+Call vocal command function that has a Production object as a parameter
+Introduce user to the TeamLeader. Shows the overriden displayMoney function.
 */
 int main()
 {
@@ -42,6 +45,7 @@ int main()
 
    //Create a ProductionWorker object and call the default constructor.
    ProductionWorker Person;
+
    //Creates a bunch of mutators to set the instance variables of the person/
    Person.setshift(shift);
    Person.sethourlypayrate(hourlyrate);
@@ -75,7 +79,7 @@ int main()
    vocalCommands(ThirdPerson); //Calls the vocalCommands(TeamLeader &) function.
    vocalCommands(FourthPerson); //Calls the void vocalCommands(ProductionWorker &) function.
 
-   cout << "That's the TeamLeader ," << ThirdPerson.getName() << ", and that's your teammate ," <<FourthPerson.getName() <<endl;
+   cout << "\nThat's the TeamLeader ," << ThirdPerson.getName() << ", and that's your teammate ," <<FourthPerson.getName() <<endl;
    //The following line calls the displayMoney(ProductionWorker &) function but this time passes a TeamLeader object
    //to the function. This causes the definition to be overridden.
    cout << "As you can see, they do not get along very well. That's because " << FourthPerson.getName() << " does not think that "

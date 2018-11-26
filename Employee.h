@@ -8,16 +8,19 @@ class Employee
 protected:
    std::string name; //Employee name
    int number; //Employee ID number
-   std::string date;
+   std::string date; //Employee date joined.
 public:
    //Default Constructor
    Employee();
+
    //Constructor
    Employee(std::string, int, std::string);
+
    //Accessors
    std::string getName() const;
    int getNumber() const;
    std::string getDate() const;
+
    //Mutators
    void setName(std::string);
    void setNumber(int);

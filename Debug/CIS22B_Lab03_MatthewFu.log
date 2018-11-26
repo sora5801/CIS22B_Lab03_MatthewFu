@@ -1,3 +1,8 @@
 ﻿  CIS22B_Lab03_MatthewFu.cpp
-c:\users\matthew\source\repos\cis22b_lab03_matthewfu\cis22b_lab03_matthewfu\cis22b_lab03_matthewfu.cpp(25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\matthew\source\repos\cis22b_lab03_matthewfu\cis22b_lab03_matthewfu\cis22b_lab03_matthewfu.cpp(36): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Employee.cpp
+  ProductionWorker.cpp
+  ShiftSupervisor.cpp
+  TeamLeader.cpp
+  Generating Code...
   CIS22B_Lab03_MatthewFu.vcxproj -> c:\users\matthew\source\repos\CIS22B_Lab03_MatthewFu\Debug\CIS22B_Lab03_MatthewFu.exe
